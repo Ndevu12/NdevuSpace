@@ -8,7 +8,7 @@ A modern, professional portfolio website built with Next.js 15, TypeScript, and 
 - **Responsive**: Fully responsive design that works on all devices
 - **Single Page**: Smooth scrolling single-page application
 - **Dark Theme**: Beautiful dark theme with accent colors
-- **Animations**: Framer Motion powered animations and transitions
+- **Animations**: Framer Motion-powered animations and transitions
 - **Performance**: Optimized for fast loading and great Core Web Vitals
 - **SEO Ready**: Full meta tags and Open Graph support
 - **Accessibility**: WCAG compliant with proper ARIA labels
@@ -59,9 +59,14 @@ portfolio/
 
 ### Installation
 
-1. Navigate to the portfolio directory:
+1. Clone the project:
    ```bash
-   cd portfolio
+   git clone https://www.github.com/Ndevu12/NdevuSpace.git
+   ```
+   
+2. cd to the project directory on your IDE:
+   ```bash
+   cd NdevuSpace
    ```
 
 2. Install dependencies:
@@ -118,8 +123,8 @@ This site is designed to be deployed on:
 ### Deploy to Vercel
 
 1. Push your code to GitHub
-2. Import the project in Vercel
-3. Configure the root directory as `portfolio`
+2. Import the project into Vercel
+3. Configure the root directory
 4. Deploy!
 
 ## 📄 License
