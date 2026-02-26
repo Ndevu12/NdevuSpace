@@ -9,15 +9,13 @@ A modern, professional portfolio website for **Jean Paul Elisa NIYOKWIZERWA** - 
 
 Built with Next.js 15, TypeScript, and Tailwind CSS.
 
-🌐 **Live Site**: [www.ndevuspace.com](https://www.ndevuspace.com)
-
 ## 🚀 Features
 
 - **Modern Design**: Clean, professional UI with smooth animations
 - **Responsive**: Fully responsive design that works on all devices
 - **SEO Optimized**: Dynamic metadata per section, clean URLs, and proper sitemap
 - **Dark Theme**: Beautiful dark theme with accent colors
-- **Animations**: Framer Motion powered animations and transitions
+- **Animations**: Framer Motion-powered animations and transitions
 - **Performance**: Optimized for fast loading and great Core Web Vitals
 - **PWA Ready**: Full favicon set and web app manifest
 - **Accessibility**: WCAG compliant with proper ARIA labels
