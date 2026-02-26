@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui";
 import { PERSONAL_INFO, SOCIAL_LINKS, EXTERNAL_LINKS } from "@/lib/constants";
 import {
@@ -86,14 +85,6 @@ export function Hero() {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8"
             >
               <Button
-                variant="primary"
-                size="lg"
-                leftIcon={<Download className="w-5 h-5" />}
-                onClick={() => (window.location.href = "/cv")}
-              >
-                View CV
-              </Button>
-              <Button
                 variant="secondary"
                 size="lg"
                 rightIcon={<ExternalLink className="w-5 h-5" />}
@@ -170,7 +161,7 @@ export function Hero() {
               {/* Floating badges */}
               <div className="absolute -right-4 top-1/4 px-3 py-2 rounded-lg bg-white dark:bg-secondary border border-gray-200 dark:border-white/10 shadow-xl">
                 <span className="text-xs font-medium text-gray-600 dark:text-gray-300">
-                  4+ Years
+                  Engineer
                 </span>
               </div>
               <div className="absolute -left-4 bottom-1/4 px-3 py-2 rounded-lg bg-white dark:bg-secondary border border-gray-200 dark:border-white/10 shadow-xl">

@@ -115,11 +115,11 @@ export function About() {
           <div className="space-y-8">
             <motion.div variants={itemVariants} className="space-y-6">
               <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-                With over{" "}
+                With {" "}
                 <span className="text-gray-900 dark:text-white font-medium">
-                  4+ years of experience
+                  Expertise
                 </span>{" "}
-                in software development, I specialize in architecting and
+                in software development and system architecture, I specialize in architecting and
                 delivering scalable web applications and backend systems. As a{" "}
                 <span className="text-gray-900 dark:text-white font-medium">
                   Tech Lead & Solutions Architect
