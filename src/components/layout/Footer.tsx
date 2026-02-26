@@ -13,7 +13,6 @@ import {
   Github,
   Linkedin,
   Mail,
-  Heart,
   ArrowUp,
   ExternalLink,
 } from "lucide-react";
@@ -128,17 +127,6 @@ export function Footer() {
                     className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
                   >
                     Blog
-                    <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={EXTERNAL_LINKS.cvDownload}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors duration-200"
-                  >
-                    Resume
                     <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </li>
