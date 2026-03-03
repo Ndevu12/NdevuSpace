@@ -54,7 +54,7 @@ export function Experience() {
         <SectionHeader
           badge="Career Journey"
           title="Professional Experience"
-          subtitle="My work history, ventures, and career milestones"
+          subtitle="My engineering career, technical roles, and contributions"
         />
 
         {/* Stacked Sections */}
@@ -70,7 +70,7 @@ export function Experience() {
                   Work Experience
                 </h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Professional roles & ventures
+                  Engineering roles & technical leadership
                 </p>
               </div>
             </div>
@@ -151,10 +151,10 @@ export function Experience() {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-                  Community & Mentorship
+                  Technical Community & Contributions
                 </h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Coaching, volunteering & giving back
+                  Algorithms coaching, competitive programming & community engineering
                 </p>
               </div>
             </div>
