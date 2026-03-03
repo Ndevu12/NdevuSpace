@@ -2,12 +2,12 @@
 export const PERSONAL_INFO = {
   name: "Jean Paul Elisa NIYOKWIZERWA",
   shortName: "Jean Paul Elisa",
-  title: "Tech Lead & Software Engineer | Entrepreneur",
+  title: "Full Stack Software Engineer",
   email: "hello" + "@" + "ndevuspace" + "." + "com",
   location: "Norrsken House Kigali, Rwanda",
-  shortBio: "I build scalable products, lead engineering teams, and turn ideas into impactful digital solutions.",
-  bio: "Software Engineer & Tech Lead with 4+ years of experience architecting and delivering scalable web applications, backend systems, and AI-powered platforms. I've built and led engineering teams, founded tech ventures, and shipped products serving thousands of users. Passionate about entrepreneurship and empowering the next generation of African developers through mentorship and competitive programming coaching.",
-  tagline: "Building Scalable Solutions That Drive Innovation Across Africa",
+  shortBio: "I design and build production-grade systems — from architecture to deployment — using modern web, cloud, and AI technologies.",
+  bio: "Full Stack Software Engineer with 4+ years of experience architecting and delivering scalable web applications, backend systems, and AI-powered platforms. I've shipped end-to-end products across real estate, mobility, and e-commerce — from system design and database optimization to cloud deployment. My deep expertise in data structures and algorithms has led me to coach at the Rwanda Computing Olympiad and Pan-African Informatics Olympiad, reinforcing my passion for rigorous engineering and technical excellence.",
+  tagline: "Building production-grade systems from architecture to deployment",
   profileImage: "/images/my-profile-pc.jpeg",
 };
 
