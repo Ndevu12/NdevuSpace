@@ -8,15 +8,15 @@
 export const SITE_CONFIG = {
   name: "Jean Paul Elisa",
   fullName: "Jean Paul Elisa NIYOKWIZERWA",
-  title: "Tech Lead & Software Engineer | Entrepreneur",
+  title: "Full Stack Software Engineer",
   url: "https://www.ndevuspace.com",
   locale: "en_US",
   description: {
     short:
-      "Tech Lead, Full Stack Software Engineer & Entrepreneur specializing in React, Node.js, TypeScript, Python, and AI/ML. Based in Kigali, Rwanda.",
-    long: "Jean Paul Elisa NIYOKWIZERWA - Tech Lead, Full Stack Software Engineer & Entrepreneur based in Kigali, Rwanda. ALX Graduate & Stanford ML certified. Specializing in React, Node.js, TypeScript, Python, Django, and AI/ML. Building scalable products, leading engineering teams, and mentoring developers across East Africa.",
+      "Full Stack Software Engineer specializing in React, Node.js, TypeScript, Python, and AI/ML. Building production-grade systems from architecture to deployment. Based in Kigali, Rwanda.",
+    long: "Jean Paul Elisa NIYOKWIZERWA - Full Stack Software Engineer based in Kigali, Rwanda. ALX Graduate & Stanford ML certified. Specializing in React, Node.js, TypeScript, Python, Django, and AI/ML. Architecting and shipping scalable web applications, backend systems, and AI-powered platforms across East Africa.",
     tagline:
-      "Building robust, scalable applications that deliver exceptional user experiences",
+      "Building production-grade systems from architecture to deployment",
   },
   location: {
     city: "Kigali",
@@ -146,6 +146,39 @@ export const SEO_KEYWORDS = [
   "AWS Developer",
   "Cloud Engineer",
 
+  // Software Engineering Core
+  "System Design",
+  "Software Architecture",
+  "API Design",
+  "REST API Design",
+  "GraphQL API Design",
+  "Distributed Systems",
+  "Microservices Architecture",
+  "Monolithic to Microservices",
+  "Database Design",
+  "Database Optimization",
+  "Schema Design",
+  "CI/CD Pipeline",
+  "Test-Driven Development",
+  "Clean Architecture",
+  "Design Patterns",
+  "Code Review",
+  "Production Systems",
+  "Performance Optimization",
+  "Scalable Web Applications",
+  "Backend Architecture",
+  "Full Stack Architecture",
+  "Infrastructure as Code",
+  "Serverless Architecture",
+  "Event-Driven Architecture",
+  "Real-time Applications",
+  "WebSocket Developer",
+  "Authentication Systems",
+  "OAuth Implementation",
+  "JWT Authentication",
+  "Payment Integration",
+  "Third-Party API Integration",
+
   // Entrepreneurial
   "Tech Entrepreneur",
   "Tech Entrepreneur Rwanda",
@@ -255,6 +288,17 @@ export const EXPERTISE_AREAS = [
   "REST API Development",
   "Cloud Computing",
   "DevOps",
+  // Software Engineering Depth
+  "System Design",
+  "Software Architecture",
+  "API Design",
+  "Database Design",
+  "Performance Optimization",
+  "Full Stack Development",
+  "CI/CD Pipelines",
+  "Microservices",
+  "Test-Driven Development",
+  "Clean Architecture",
   // Leadership & Business
   "Technical Leadership",
   "Team Management",
@@ -263,7 +307,6 @@ export const EXPERTISE_AREAS = [
   "Startup Development",
   "Business Strategy",
   "Tech Mentorship",
-  "Software Architecture",
 ];
 
 // Tech stack for OG image display (top 5)

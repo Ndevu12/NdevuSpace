@@ -2,7 +2,7 @@
 
 This document defines the common guidelines and conventions to follow while working on the **MY-BRAND** portfolio project refactor to **Next.js (App Router)**.
 
-This Website will be serving my vision so, it is not only about the website as the portfolio but Personal branding from Enterprenuerial, Software Engineering, AI, ML, Cloud Native, and IoT Enthusiast, and Pan-Africanism.
+This Website will be serving my vision so, it is not only about the website as the portfolio but Personal branding as a **Full Stack Software Engineer** with depth in AI/ML, Cloud Native, IoT, and System Architecture. All content — including entrepreneurial experience and community contributions — should be framed as supporting evidence of software engineering expertise.
 ---
 
 ## 🚀 Project Goal

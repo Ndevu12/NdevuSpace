@@ -48,8 +48,8 @@ export function Projects() {
       >
         <SectionHeader
           badge="My Work"
-          title="Projects & Ventures"
-          subtitle="Products I've built, companies I've founded, and solutions I've delivered"
+          title="Engineering Projects"
+          subtitle="Systems I've architected, built, and shipped to production"
         />
 
         {/* Projects Grid */}
