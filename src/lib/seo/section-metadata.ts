@@ -50,9 +50,9 @@ const ABOUT_KEYWORDS = [
   "Jean Paul Elisa background",
   "Jean Paul Elisa story",
   // Professional identity
-  "Tech Lead Rwanda",
+  "Full Stack Software Engineer Rwanda",
   "Software Engineer Rwanda",
-  "African Tech Entrepreneur",
+  "System Design Rwanda",
   "Rwandan Developer",
   "Kigali Software Engineer",
   // Education & credentials
@@ -60,10 +60,10 @@ const ABOUT_KEYWORDS = [
   "ALX Software Engineer",
   "Stanford ML Certificate",
   "University of Rwanda Graduate",
-  // Entrepreneurial
-  "Tech Entrepreneur Rwanda",
-  "Technical Co-founder Rwanda",
-  "Startup Founder Rwanda",
+  // Engineering depth
+  "Software Architecture Rwanda",
+  "Full Stack Developer Rwanda",
+  "Backend Engineer Rwanda",
 ];
 
 const SKILLS_KEYWORDS = [
@@ -130,7 +130,7 @@ const EXPERIENCE_KEYWORDS = [
   "Jean Paul Elisa Work History",
   "Jean Paul Elisa Resume",
   "Jean Paul Elisa CV",
-  // Leadership
+  // Engineering leadership
   "Tech Lead Experience",
   "Engineering Lead Africa",
   "Technical Leadership Rwanda",
@@ -138,18 +138,18 @@ const EXPERIENCE_KEYWORDS = [
   // Industry experience
   "Software Engineer Experience",
   "Full Stack Developer Experience",
-  "Startup Experience Rwanda",
+  "System Design Experience",
   "Freelance Developer Experience",
-  // Companies & ventures
+  // Companies & roles
   "Andela Developer",
   "Rwanda Tech Companies",
   "East Africa Tech Experience",
-  // Mentorship
+  // Technical community
   "DSA Coach",
   "DSA Coach Rwanda",
-  "Coding Interview Coach",
-  "Tech Mentor Rwanda",
-  "Competitive Programming Coach",
+  "Algorithms Expert Rwanda",
+  "Competitive Programming Rwanda",
+  "Data Structures Expert Africa",
 ];
 
 const CONTACT_KEYWORDS = [
@@ -165,8 +165,8 @@ const CONTACT_KEYWORDS = [
   "Contract Developer Rwanda",
   // Collaboration
   "Tech Collaboration Rwanda",
-  "Startup Co-founder Rwanda",
   "Technical Partner Africa",
+  "Software Development Partner Africa",
   // Contact terms
   "Contact Jean Paul Elisa",
   "Jean Paul Elisa Email",
@@ -182,15 +182,15 @@ export const INDEXABLE_SECTIONS: Record<SectionId, SectionSEO> = {
     id: "about",
     path: "/about",
     name: "About",
-    title: "About Jean Paul Elisa | Tech Lead & Software Engineer from Rwanda",
+    title: "About Jean Paul Elisa | Full Stack Software Engineer from Rwanda",
     description:
-      "Learn about Jean Paul Elisa NIYOKWIZERWA - Tech Lead, Full Stack Software Engineer & Entrepreneur based in Kigali, Rwanda. ALX Graduate & Stanford ML certified with expertise in building scalable products and leading engineering teams across East Africa.",
+      "Learn about Jean Paul Elisa NIYOKWIZERWA - Full Stack Software Engineer based in Kigali, Rwanda. ALX Graduate & Stanford ML certified with expertise in architecting and shipping scalable web applications, backend systems, and AI-powered platforms.",
     keywords: ABOUT_KEYWORDS,
     priority: 0.9,
     changeFreq: "monthly",
-    ogTitle: "About Jean Paul Elisa | My Journey in Tech",
+    ogTitle: "About Jean Paul Elisa | My Journey in Software Engineering",
     ogDescription:
-      "Discover the story of Jean Paul Elisa - from Rwanda to building scalable tech products and mentoring the next generation of African developers.",
+      "Discover the story of Jean Paul Elisa - from Rwanda to architecting production-grade systems and contributing to the technical community across Africa.",
   },
   skills: {
     id: "skills",
@@ -224,15 +224,15 @@ export const INDEXABLE_SECTIONS: Record<SectionId, SectionSEO> = {
     id: "experience",
     path: "/experience",
     name: "Experience",
-    title: "Work Experience | Jean Paul Elisa - Tech Lead & CTO",
+    title: "Work Experience | Jean Paul Elisa - Full Stack Software Engineer",
     description:
-      "Jean Paul Elisa's professional experience as Tech Lead, CTO, and Software Engineer. Roles at GEOFINDA, Global Real Estate Ltd, Andela, and DSA coaching for Pan-African Informatics Olympiad. 4+ years building scalable products.",
+      "Jean Paul Elisa's professional experience as a Full Stack Software Engineer. Engineering roles at GEOFINDA, Global Real Estate Ltd, Andela, and algorithms coaching for the Pan-African Informatics Olympiad. 4+ years building scalable systems.",
     keywords: EXPERIENCE_KEYWORDS,
     priority: 0.85,
     changeFreq: "monthly",
     ogTitle: "Professional Experience | Jean Paul Elisa",
     ogDescription:
-      "Tech Lead, CTO, and Software Engineer experience across startups, enterprise, and mentorship in East Africa.",
+      "Full Stack Software Engineer experience across startups, enterprise, and technical community contributions in East Africa.",
   },
   contact: {
     id: "contact",

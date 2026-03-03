@@ -9,7 +9,6 @@ import {
   Github,
   Linkedin,
   Mail,
-  Download,
   ArrowDown,
   ExternalLink,
 } from "lucide-react";

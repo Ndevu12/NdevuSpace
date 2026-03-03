@@ -10,8 +10,8 @@
       "description": [
         "Lead development of, and architected a web-based accommodation and property discovery platform focusing on Africa's rental and listing market",
         "Designed the technical architecture built on Supabase and GraphQL for rapid development and scalability",
-        "Created sustainable business and payment models ensuring revenue generation for local hosts and agents",
-        "Oversaw brand development, product roadmap, and customer experience alignment with market needs"
+        "Engineered payment integration systems and subscription models supporting local hosts and agents",
+        "Defined the product roadmap and technical direction, aligning platform architecture with market requirements"
       ],
       "technologies": ["Supabase", "RESTFul API", "React", "Node.js", "PostgreSQL", "Payment Integration"],
       "achievements": [
@@ -48,7 +48,7 @@
       "description": [
         "Architected and deployed a scalable digital real estate platform with integration to external APIs for land registry data, tax calculations, and loan verification systems",
         "Directed the design and deployment of AI-powered systems including recommender models, fraud detection, and NLP-based assistants for underserved users",
-        "Led a cross-functional engineering team of 5+ developers, conducting code reviews, technical mentorship, and sprint planning using Agile methodology",
+        "Led a cross-functional engineering team of 5+ developers, conducting code reviews, architecture discussions, and sprint planning using Agile methodology",
         "Designed and optimized database schemas, stored procedures, and triggers in PostgreSQL, improving query performance by 40%",
         "Implemented DevOps best practices including Docker containerization and deployment to Microsoft Azure, achieving 99.5% system uptime"
       ],
@@ -91,7 +91,7 @@
         "Built and maintained responsive web applications using React, Redux, and TypeScript, improving user experience across devices",
         "Collaborated in agile sprints, delivering features on schedule while maintaining high-quality code standards",
         "Implemented automated testing frameworks to ensure feature reliability, code quality, and maintainability",
-        "Mentored junior developers through code reviews and knowledge-sharing sessions, fostering a collaborative engineering culture"
+        "Contributed to team engineering culture through code reviews and knowledge-sharing sessions, fostering collaborative development practices"
       ],
       "technologies": ["React", "Redux", "TypeScript", "Jest", "Agile/Scrum"],
       "achievements": [
@@ -107,14 +107,14 @@
       "period": "2023 - 2024",
       "type": "work",
       "description": [
-        "Developed a pioneering AI and IoT-powered mobility platform designed to address Rwanda's public transport challenges",
-        "Led system architecture, business design, and technical direction during incubation at the AI & IoT Innovation Program",
-        "Managed early partnerships with local transport operators and regulators to explore pilot implementation"
+        "Architected an AI and IoT-powered mobility platform designed to address Rwanda's public transport challenges with real-time tracking and smart routing",
+        "Led system architecture and technical direction during incubation at the AI & IoT Innovation Program, making core technology stack decisions",
+        "Integrated third-party APIs and transport operator systems to enable pilot implementation and real-time data exchange"
       ],
       "technologies": ["AI/ML", "IoT", "Node.js", "React Native"],
       "achievements": [
         "Selected for AI & IoT Innovation Program incubation",
-        "Built foundation for future innovation ventures"
+        "Built real-time tracking and smart routing architecture"
       ]
     }
   ],
@@ -128,8 +128,8 @@
       "type": "education",
       "description": [
         "Studying business administration with focus on information technology",
-        "Combining business strategy with technical implementation skills",
-        "Applying academic knowledge to real-world entrepreneurial ventures"
+        "Combining business domain knowledge with software engineering implementation skills",
+        "Applying academic knowledge to real-world software development projects"
       ],
       "technologies": ["Business Strategy", "IT Management", "Data Analysis"],
       "achievements": []
@@ -246,9 +246,9 @@
       "period": "Apr 2025 - Present",
       "type": "volunteering",
       "description": [
-        "Coaching talented young programmers from across Africa in advanced data structures and algorithms",
-        "Preparing students for competitive programming at the international level",
-        "Developing training materials and practice problems for olympiad preparation"
+        "Coaching talented young programmers from across Africa in advanced data structures, algorithms, and competitive programming techniques",
+        "Designing training curricula and practice problems that build deep algorithmic thinking and problem-solving skills",
+        "Preparing students for competitive programming at the international level, leveraging strong CS fundamentals"
       ],
       "technologies": ["Algorithms", "Data Structures", "C++", "Python", "Problem Solving"]
     },
@@ -260,9 +260,9 @@
       "period": "Feb 2024 - Present",
       "type": "volunteering",
       "description": [
-        "Training Rwanda's top young programmers in competitive programming techniques",
-        "Mentoring students on algorithmic thinking and problem-solving strategies",
-        "Contributing to building Rwanda's competitive programming community"
+        "Training Rwanda's top young programmers in advanced algorithms, data structures, and competitive programming techniques",
+        "Developing algorithmic problem sets and structured curricula to strengthen computational thinking skills",
+        "Contributing to building Rwanda's competitive programming community through rigorous technical training"
       ],
       "technologies": ["Algorithms", "Data Structures", "C++", "Python", "Competitive Programming"]
     },
@@ -275,8 +275,8 @@
       "type": "volunteering",
       "description": [
         "Serving on the organizing committee for PAIO 2025 hosted in Rwanda",
-        "Coordinating logistics, technical infrastructure, and participant experience",
-        "Representing Rwanda's growing tech community on the continental stage"
+        "Coordinating technical infrastructure, competition platform setup, and participant experience",
+        "Contributing engineering expertise to Rwanda's growing presence on the continental tech stage"
       ],
       "technologies": ["Event Organization", "Technical Coordination", "Community Building"]
     },

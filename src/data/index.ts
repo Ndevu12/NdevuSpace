@@ -114,7 +114,7 @@ export const statsData = [
   { label: "Projects Completed", value: "50+" },
   { label: "Years Experience", value: "4+" },
   { label: "Technologies", value: "25+" },
-  { label: "Happy Clients", value: "30+" },
+  { label: "Projects Delivered", value: "30+" },
 ];
 
 // ============================================
