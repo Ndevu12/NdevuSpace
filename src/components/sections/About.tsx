@@ -77,13 +77,15 @@ export function About() {
               <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 via-purple-500/10 to-blue-500/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 
               {/* Main image */}
-              <div className="relative rounded-2xl overflow-hidden border border-gray-200 dark:border-white/10">
+              <div className="relative w-full rounded-2xl overflow-hidden border border-gray-200 dark:border-white/10 aspect-[3/4]">
                 <Image
                   src={PERSONAL_INFO.profileImage}
                   alt="About Jean Paul"
-                  width={600}
-                  height={500}
-                  className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover w-full transition-transform duration-700 group-hover:scale-105"
+                  style={{ objectPosition: "center 35%" }}
+                  priority
                 />
 
                 {/* Overlay */}
