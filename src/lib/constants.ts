@@ -8,7 +8,7 @@ export const PERSONAL_INFO = {
   shortBio: "I design and build production-grade systems — from architecture to deployment — using modern web, cloud, and AI technologies.",
   bio: "Full Stack Software Engineer with 4+ years of experience architecting and delivering scalable web applications, backend systems, and AI-powered platforms. I've shipped end-to-end products across real estate, mobility, and e-commerce — from system design and database optimization to cloud deployment. My deep expertise in data structures and algorithms has led me to coach at the Rwanda Computing Olympiad and Pan-African Informatics Olympiad, reinforcing my passion for rigorous engineering and technical excellence.",
   tagline: "Building production-grade systems from architecture to deployment",
-  profileImage: "/images/my-profile-pc.jpeg",
+  profileImage: "/images/my-org-profile-image.jpeg",
 };
 
 // Social Links

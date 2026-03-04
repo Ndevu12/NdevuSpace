@@ -52,7 +52,7 @@ export function TechBadge({ children, className }: TechBadgeProps) {
   return (
     <span
       className={cn(
-        "inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium tracking-wide",
+        "inline-flex items-center px-3 py-1.5 rounded-md text-sm font-medium tracking-wide",
         "bg-gray-100 dark:bg-white/[0.06] text-gray-700 dark:text-gray-300",
         "border border-gray-200/80 dark:border-white/10",
         "transition-colors duration-200",
