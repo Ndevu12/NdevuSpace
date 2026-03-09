@@ -185,7 +185,3 @@ See the [LICENSE](LICENSE) file for full details.
 | 📝 Blog | [blog.ndevuspace.com](https://blog.ndevuspace.com) |
 
 ---
-
-<p align="center">
-  Made with ❤️ in Kigali, Rwanda
-</p>
