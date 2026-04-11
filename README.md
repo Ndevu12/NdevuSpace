@@ -9,7 +9,7 @@ A modern, professional portfolio website for **Jean Paul Elisa NIYOKWIZERWA** - 
 
 Built with Next.js 15, TypeScript, and Tailwind CSS.
 
-## 🚀 Features
+## Features
 
 - **Modern Design**: Clean, professional UI with smooth animations
 - **Responsive**: Fully responsive design that works on all devices
@@ -21,7 +21,7 @@ Built with Next.js 15, TypeScript, and Tailwind CSS.
 - **Accessibility**: WCAG compliant with proper ARIA labels
 - **Indexable Sections**: Each section (`/about`, `/skills`, `/projects`, etc.) has unique metadata for search engines
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Category | Technology |
 |----------|------------|
@@ -33,7 +33,7 @@ Built with Next.js 15, TypeScript, and Tailwind CSS.
 | **Fonts** | Inter (Google Fonts) |
 | **Deployment** | Vercel |
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -62,7 +62,7 @@ src/
 └── types/                   # TypeScript type definitions
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -89,7 +89,7 @@ src/
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 📦 Building for Production
+## Building for Production
 
 ```bash
 # Build the application
@@ -99,7 +99,7 @@ yarn build
 yarn start
 ```
 
-## 🎨 Customization
+## Customization
 
 ### Personal Information
 
@@ -131,7 +131,7 @@ Place your images in the `public/images/` directory:
 - Project screenshots in `projects/`
 - Any other static assets
 
-## 🌐 Deployment
+## Deployment
 
 This site is deployed on **Vercel** with automatic deployments from the `develop` branch.
 
@@ -146,7 +146,7 @@ This site is deployed on **Vercel** with automatic deployments from the `develop
 
 No environment variables are required for basic deployment. For the contact form, configure your email service credentials.
 
-## 🔍 SEO Features
+## SEO Features
 
 - **Dynamic Metadata**: Each section URL has unique title, description, and keywords
 - **Clean URLs**: `/about`, `/skills`, `/projects`, `/experience`, `/contact`
@@ -155,7 +155,7 @@ No environment variables are required for basic deployment. For the contact form
 - **Open Graph**: Full social media preview support
 - **Structured Data**: JSON-LD for rich search results
 
-## 📄 License
+## License
 
 This project is open source but requires consent for use.
 
@@ -172,16 +172,16 @@ To request permission, please contact: **hello@ndevuspace.com**
 
 See the [LICENSE](LICENSE) file for full details.
 
-## 🤝 Contact
+## Contact
 
 **Jean Paul Elisa NIYOKWIZERWA**
 
 | Platform | Link |
 |----------|------|
-| 🌐 Website | [www.ndevuspace.com](https://www.ndevuspace.com) |
-| 📧 Email | [hello@ndevuspace.com](mailto:hello@ndevuspace.com) |
-| 💼 LinkedIn | [jean-paul-elisa](https://linkedin.com/in/jean-paul-elisa) |
-| 🐙 GitHub | [Ndevu12](https://github.com/Ndevu12) |
-| 📝 Blog | [blog.ndevuspace.com](https://blog.ndevuspace.com) |
+| Website | [www.ndevuspace.com](https://www.ndevuspace.com) |
+| Email | [hello@ndevuspace.com](mailto:hello@ndevuspace.com) |
+| LinkedIn | [jean-paul-elisa](https://linkedin.com/in/jean-paul-elisa) |
+| GitHub | [Ndevu12](https://github.com/Ndevu12) |
+| Blog | [blog.ndevuspace.com](https://blog.ndevuspace.com) |
 
 ---
