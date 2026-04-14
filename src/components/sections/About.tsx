@@ -65,8 +65,8 @@ export function About() {
       >
         <SectionHeader
           badge="About Me"
-          title="Engineer, Entrepreneur & Mentor"
-          subtitle="Building scalable solutions that drive innovation across Africa"
+          title="Full Stack Software Engineer"
+          subtitle="Building production-grade systems from architecture to deployment"
         />
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -77,13 +77,15 @@ export function About() {
               <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 via-purple-500/10 to-blue-500/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 
               {/* Main image */}
-              <div className="relative rounded-2xl overflow-hidden border border-gray-200 dark:border-white/10">
+              <div className="relative w-full rounded-2xl overflow-hidden border border-gray-200 dark:border-white/10 aspect-[3/4]">
                 <Image
                   src={PERSONAL_INFO.profileImage}
                   alt="About Jean Paul"
-                  width={600}
-                  height={500}
-                  className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover w-full transition-transform duration-700 group-hover:scale-105"
+                  style={{ objectPosition: "center 35%" }}
+                  priority
                 />
 
                 {/* Overlay */}
@@ -115,36 +117,36 @@ export function About() {
           <div className="space-y-8">
             <motion.div variants={itemVariants} className="space-y-6">
               <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-                With over{" "}
+                With {" "}
                 <span className="text-gray-900 dark:text-white font-medium">
-                  4+ years of experience
+                  Expertise
                 </span>{" "}
-                in software development, I specialize in architecting and
+                in software development and system architecture, I specialize in architecting and
                 delivering scalable web applications and backend systems. As a{" "}
                 <span className="text-gray-900 dark:text-white font-medium">
-                  Tech Lead & Solutions Architect
+                  Full Stack Software Engineer
                 </span>
-                , I&apos;ve built and led engineering teams creating innovative
-                digital platforms with AI-powered features.
+                , I&apos;ve designed and built production platforms with
+                AI-powered features, real-time APIs, and cloud-native infrastructure.
               </p>
               <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
                 My expertise spans{" "}
                 <span className="text-gray-900 dark:text-white font-medium">
                   Node.js, Java/Spring, Python, PostgreSQL
                 </span>{" "}
-                and cloud platforms like Azure and AWS. I&apos;ve founded
-                multiple tech ventures, combining technical excellence with
-                entrepreneurial vision to build products that solve real-world
-                problems and serve thousands of users.
+                and cloud platforms like Azure and AWS. I&apos;ve built
+                products end-to-end across real estate, mobility, and e-commerce
+                — from system design and database optimization to CI/CD
+                pipelines and production deployment — serving thousands of users.
               </p>
               <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-                Beyond building products, I&apos;m passionate about{" "}
+                My deep expertise in{" "}
                 <span className="text-gray-900 dark:text-white font-medium">
-                  mentoring the next generation
+                  data structures and algorithms
                 </span>{" "}
-                of African developers. As a DSA Coach for the Rwanda and
-                Pan-African Informatics Olympiad, I help young talents unlock
-                their potential in competitive programming.
+                has led me to coach at the Rwanda Computing Olympiad and
+                Pan-African Informatics Olympiad, reinforcing my commitment to
+                rigorous engineering and technical excellence.
               </p>
             </motion.div>
 

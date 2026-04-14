@@ -28,27 +28,11 @@ export const projectsData: Project[] = [
     githubLink: project.links.github || 'https://github.com/Ndevu12',
     liveLink: project.links.demo || undefined,
     featured: project.featured,
-  })),
-  // Other projects
-  ...projectsJson.projects.map((project) => ({
-    id: project.id,
-    title: project.title,
-    description: project.description,
-    image: project.image,
-    category: project.category === 'fullstack' ? 'Web Apps' : 
-              project.category === 'frontend' ? 'Web Apps' : 
-              project.category === 'backend' ? 'Backend' : 
-              project.category === 'mobile' ? 'Mobile' : 'Web Apps',
-    techStack: project.technologies,
-    githubLink: project.links.github || 'https://github.com/Ndevu12',
-    liveLink: project.links.demo || undefined,
-    featured: false,
-  })),
+  }))
 ];
 
 // Export raw project data for more detailed views
-export const featuredProjects = projectsJson.featured;
-export const allProjects = projectsJson.projects;
+export const projects = projectsJson.featured;
 export const projectCategories = projectsJson.categories;
 
 // ============================================
@@ -114,7 +98,7 @@ export const statsData = [
   { label: "Projects Completed", value: "50+" },
   { label: "Years Experience", value: "4+" },
   { label: "Technologies", value: "25+" },
-  { label: "Happy Clients", value: "30+" },
+  { label: "Projects Delivered", value: "30+" },
 ];
 
 // ============================================

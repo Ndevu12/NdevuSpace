@@ -9,6 +9,7 @@ import { NAV_ITEMS, PERSONAL_INFO, EXTERNAL_LINKS } from "@/lib/constants";
 import { useScrollSpy, useScrollDirection } from "@/hooks";
 import { useTheme } from "@/contexts/ThemeContext";
 import { Menu, X, ExternalLink, Sun, Moon } from "lucide-react";
+import { Logo } from "../ui/logo";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -76,26 +77,7 @@ export function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <Link
-              href="/"
-              className="flex items-center gap-2 group"
-              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            >
-              <div
-                className={cn(
-                  "w-10 h-10 rounded-xl flex items-center justify-center",
-                  "bg-gradient-to-br from-blue-500 to-purple-500",
-                  "text-white font-bold text-lg",
-                  "group-hover:shadow-lg group-hover:shadow-blue-500/25",
-                  "transition-all duration-300"
-                )}
-              >
-                N
-              </div>
-              <span className="text-gray-900 dark:text-white font-semibold text-lg hidden sm:block">
-                {PERSONAL_INFO.shortName}
-              </span>
-            </Link>
+            <Logo shortName={PERSONAL_INFO.shortName} />
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center gap-1">
