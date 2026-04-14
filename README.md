@@ -71,10 +71,10 @@ src/
 
 ### Installation
 
-1. Clone the repository:
+1. Clone the project:
    ```bash
-   git clone https://github.com/Ndevu12/My-BRAND.git
-   cd My-BRAND
+   git clone https://www.github.com/Ndevu12/NdevuSpace.git
+   cd NdevuSpace
    ```
 
 2. Install dependencies:
@@ -123,24 +123,6 @@ Edit `src/lib/constants.ts` for navigation and UI constants.
 
 - **Colors**: Edit `tailwind.config.ts` to customize the color palette
 - **Global Styles**: Edit `src/styles/globals.css` for global CSS changes
-
-### Images
-
-Place your images in the `public/images/` directory:
-- Profile pictures
-- Project screenshots in `projects/`
-- Any other static assets
-
-## Deployment
-
-This site is deployed on **Vercel** with automatic deployments from the `develop` branch.
-
-### Deploy Your Own
-
-1. Fork this repository
-2. Import the project in [Vercel](https://vercel.com)
-3. Configure environment variables if needed
-4. Deploy!
 
 ### Environment Variables
 
