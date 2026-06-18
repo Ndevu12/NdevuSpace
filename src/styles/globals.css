@@ -79,13 +79,13 @@ body {
   display: none;
 }
 
-/* Text gradient utility */
+/* Accent text utility — single blue accent, no gradient */
 .text-gradient {
-  @apply bg-gradient-to-r from-blue-400 via-purple-400 to-blue-500 bg-clip-text text-transparent;
+  @apply text-blue-600 dark:text-blue-400;
 }
 
 .text-gradient-gold {
-  @apply bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-500 bg-clip-text text-transparent;
+  @apply text-blue-600 dark:text-blue-400;
 }
 
 /* Glass effect */
@@ -155,17 +155,10 @@ body {
   z-index: 1;
 }
 
-/* Animated gradient border */
+/* Solid accent border */
 .gradient-border {
   position: relative;
-  background: linear-gradient(#ffffff, #ffffff) padding-box,
-              linear-gradient(135deg, #3b82f6, #8b5cf6, #3b82f6) border-box;
-  border: 2px solid transparent;
-}
-
-.dark .gradient-border {
-  background: linear-gradient(#0a0a0f, #0a0a0f) padding-box,
-              linear-gradient(135deg, #3b82f6, #8b5cf6, #3b82f6) border-box;
+  border: 2px solid #3b82f6;
 }
 
 /* Section transitions */
@@ -182,8 +175,8 @@ body {
 
 /* Button styles */
 .btn-primary {
-  @apply px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-medium rounded-lg 
-         transition-all duration-300 hover:from-blue-600 hover:to-blue-700 hover:shadow-lg hover:shadow-blue-500/25
+  @apply px-6 py-3 bg-blue-600 text-white font-medium rounded-lg 
+         transition-all duration-300 hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-500/25
          active:scale-95;
 }
 

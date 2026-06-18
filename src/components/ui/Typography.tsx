@@ -40,8 +40,6 @@ const colorStyles = {
 
 const accentStyles = {
   blue: "text-blue-600 dark:text-blue-400",
-  green: "text-green-600 dark:text-green-400",
-  purple: "text-purple-600 dark:text-purple-400",
 } as const;
 
 // Default semantic HTML tags per variant
