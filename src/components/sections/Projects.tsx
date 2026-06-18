@@ -49,12 +49,12 @@ export function Projects() {
         <SectionHeader
           badge="My Work"
           title="Engineering Projects"
-          subtitle="Systems I've architected, built, and shipped to production"
+          subtitle="Selected work, shipped to production."
         />
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {projectsData.slice(0, 6).map((project) => (
+          {projectsData.slice(0, 3).map((project) => (
             <motion.div key={project.id} variants={itemVariants}>
               <Card className="h-full group overflow-hidden" hover>
                 {/* Project Image */}

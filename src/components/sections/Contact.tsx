@@ -122,7 +122,6 @@ export function Contact() {
       {/* Background decoration */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-blue-500/5 dark:bg-blue-500/10 rounded-full blur-[100px]" />
-        <div className="absolute top-1/4 right-0 w-[300px] h-[300px] bg-purple-500/5 dark:bg-purple-500/10 rounded-full blur-[80px]" />
       </div>
 
       <motion.div
@@ -134,7 +133,7 @@ export function Contact() {
         <SectionHeader
           badge="Get In Touch"
           title="Let's Work Together"
-          subtitle="Have a project in mind or want to collaborate? I'd love to hear from you"
+          subtitle="Have a project in mind? Let's talk."
         />
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
@@ -145,10 +144,8 @@ export function Contact() {
                 Let&apos;s start a conversation
               </h3>
               <p className="text-gray-500 dark:text-gray-400 leading-relaxed">
-                Whether you have a project idea, a question, or just want to say
-                hi, I&apos;m always open to discussing new opportunities and
-                collaborations. Fill out the form or reach out directly through
-                any of the channels below.
+                Have a project, a question, or just want to say hi? Reach out via
+                the form or any channel below.
               </p>
             </div>
 
@@ -355,7 +352,7 @@ export function Contact() {
 
                 {/* Status Messages */}
                 {submitStatus === "success" && (
-                  <div className="flex items-center gap-2 text-green-500 dark:text-green-400 text-sm">
+                  <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400 text-sm">
                     <CheckCircle className="w-5 h-5" />
                     <span>
                       Message sent successfully! I&apos;ll get back to you soon.

@@ -62,8 +62,8 @@ export function Hero() {
             {/* Name & Title */}
             <motion.div variants={itemVariants} className="mt-6">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
-                Hi, I&apos;m{" "}
-                <span className="text-gradient">{PERSONAL_INFO.shortName}</span>
+                Hi,{" "}
+                <span className="text-gradient">{PERSONAL_INFO.abvName}</span> Here!
               </h1>
               <p className="text-xl sm:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 font-medium mb-6">
                 {PERSONAL_INFO.title}
@@ -122,7 +122,7 @@ export function Hero() {
                 </a>
                 <a
                   href={SOCIAL_LINKS.email}
-                  className="p-2 rounded-lg bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-gray-500 dark:text-gray-400 hover:text-green-500 dark:hover:text-green-400 hover:bg-green-50 dark:hover:bg-green-500/10 hover:border-green-200 dark:hover:border-green-500/20 transition-all duration-300"
+                  className="p-2 rounded-lg bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-500/10 hover:border-blue-200 dark:hover:border-blue-500/20 transition-all duration-300"
                   aria-label="Email Contact"
                 >
                   <Mail className="w-5 h-5" />
@@ -139,16 +139,16 @@ export function Hero() {
             <div className="relative">
               {/* Decorative rings */}
               <div className="absolute -inset-4 rounded-full border border-blue-500/20 animate-pulse-slow" />
-              <div className="absolute -inset-8 rounded-full border border-purple-500/10" />
+              <div className="absolute -inset-8 rounded-full border border-blue-500/10" />
 
               {/* Glow effect */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/30 to-purple-500/30 blur-2xl" />
+              <div className="absolute inset-0 rounded-full bg-blue-500/20 blur-2xl" />
 
               {/* Image container */}
               <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full overflow-hidden border-2 border-gray-200 dark:border-white/10 shadow-2xl">
                 <Image
                   src={PERSONAL_INFO.profileImage}
-                  alt={PERSONAL_INFO.name}
+                  alt={PERSONAL_INFO.fullName}
                   fill
                   className="object-cover"
                   priority
