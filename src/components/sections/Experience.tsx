@@ -53,8 +53,8 @@ export function Experience() {
       >
         <SectionHeader
           badge="Career Journey"
-          title="Featured Professional Experience"
-          subtitle="My engineering career, technical roles, and contributions"
+          title="Experience"
+          subtitle="Roles, community, and education."
         />
 
         {/* Stacked Sections */}
@@ -68,7 +68,7 @@ export function Experience() {
               <div>
                 <Typography variant="h3">Work Experience</Typography>
                 <Typography variant="meta" color="muted" className="mt-1">
-                  Engineering roles & technical leadership
+                  Engineering roles
                 </Typography>
               </div>
             </div>
@@ -118,7 +118,7 @@ export function Experience() {
 
                     {/* Description */}
                     <ul className="flex-1 space-y-3.5 mb-7">
-                      {item.description.slice(0, 3).map((desc, descIndex) => (
+                      {item.description.slice(0, 2).map((desc, descIndex) => (
                         <li
                           key={descIndex}
                           className="flex items-start gap-3"
@@ -133,7 +133,7 @@ export function Experience() {
 
                     {/* Tech Stack */}
                     <div className="flex flex-wrap gap-2.5 pt-5 border-t border-gray-100 dark:border-white/[0.06]">
-                      {item.technologies.slice(0, 5).map((tech, techIndex) => (
+                      {item.technologies.slice(0, 4).map((tech, techIndex) => (
                         <TechBadge key={techIndex}>{tech}</TechBadge>
                       ))}
                     </div>
@@ -146,13 +146,13 @@ export function Experience() {
           {/* Community & Volunteering Section */}
           <motion.div variants={itemVariants}>
             <div className="flex items-center gap-4 mb-10">
-              <div className="p-3.5 rounded-xl bg-green-500/10 border border-green-500/20">
-                <Heart className="w-6 h-6 text-green-500" />
+              <div className="p-3.5 rounded-xl bg-blue-500/10 border border-blue-500/20">
+                <Heart className="w-6 h-6 text-blue-500" />
               </div>
               <div>
-                <Typography variant="h3">Technical Community & Contributions</Typography>
+                <Typography variant="h3">Community & Contributions</Typography>
                 <Typography variant="meta" color="muted" className="mt-1">
-                  Algorithms coaching, competitive programming & community engineering
+                  Coaching & competitive programming
                 </Typography>
               </div>
             </div>
@@ -167,7 +167,7 @@ export function Experience() {
                     "bg-white dark:bg-white/[0.02]",
                     "border border-gray-200 dark:border-white/[0.06]",
                     "shadow-sm hover:shadow-lg dark:shadow-none",
-                    "hover:border-green-300 dark:hover:border-green-500/30",
+                    "hover:border-blue-300 dark:hover:border-blue-500/30",
                     "transition-all duration-300",
                   )}
                 >
@@ -175,14 +175,14 @@ export function Experience() {
                   <div className="flex flex-col h-full p-7 lg:p-8">
                     {/* Header */}
                     <div className="flex items-start gap-4 mb-6">
-                      <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-green-500/10 border border-green-500/20 flex items-center justify-center">
-                        <Users className="w-5 h-5 text-green-500" />
+                      <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center">
+                        <Users className="w-5 h-5 text-blue-500" />
                       </div>
                       <div className="flex-1 min-w-0">
                         <Typography variant="h4" className="mb-1.5">
                           {item.role}
                         </Typography>
-                        <Typography variant="subtitle" accent="green">
+                        <Typography variant="subtitle" accent="blue">
                           {item.organization}
                         </Typography>
                       </div>
@@ -202,12 +202,12 @@ export function Experience() {
 
                     {/* Description */}
                     <ul className="flex-1 space-y-3.5 mb-7">
-                      {item.description.map((desc, descIndex) => (
+                      {item.description.slice(0, 2).map((desc, descIndex) => (
                         <li
                           key={descIndex}
                           className="flex items-start gap-3"
                         >
-                          <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-green-500/60" />
+                          <span className="flex-shrink-0 w-2 h-2 mt-2 rounded-full bg-blue-500/60" />
                           <Typography variant="body" color="secondary" as="span">
                             {desc}
                           </Typography>
@@ -219,7 +219,7 @@ export function Experience() {
                     {item.technologies && item.technologies.length > 0 && (
                       <div className="flex flex-wrap gap-2.5 pt-5 border-t border-gray-100 dark:border-white/[0.06]">
                         {item.technologies
-                          .slice(0, 5)
+                          .slice(0, 4)
                           .map((tech, techIndex) => (
                             <TechBadge key={techIndex}>{tech}</TechBadge>
                           ))}
@@ -234,13 +234,13 @@ export function Experience() {
           {/* Education Section */}
           <motion.div variants={itemVariants}>
             <div className="flex items-center gap-4 mb-10">
-              <div className="p-3.5 rounded-xl bg-purple-500/10 border border-purple-500/20">
-                <GraduationCap className="w-6 h-6 text-purple-500" />
+              <div className="p-3.5 rounded-xl bg-blue-500/10 border border-blue-500/20">
+                <GraduationCap className="w-6 h-6 text-blue-500" />
               </div>
               <div>
                 <Typography variant="h3">Education & Training</Typography>
                 <Typography variant="meta" color="muted" className="mt-1">
-                  Academic background & certifications
+                  Academic background
                 </Typography>
               </div>
             </div>
@@ -255,7 +255,7 @@ export function Experience() {
                     "bg-white dark:bg-white/[0.02]",
                     "border border-gray-200 dark:border-white/[0.06]",
                     "shadow-sm hover:shadow-lg dark:shadow-none",
-                    "hover:border-purple-300 dark:hover:border-purple-500/30",
+                    "hover:border-blue-300 dark:hover:border-blue-500/30",
                     "transition-all duration-300",
                   )}
                 >
@@ -263,8 +263,8 @@ export function Experience() {
                   <div className="flex flex-col h-full p-6 lg:p-7">
                     {/* Header */}
                     <div className="flex items-start gap-3 mb-5">
-                      <div className="flex-shrink-0 w-11 h-11 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center">
-                        <GraduationCap className="w-5 h-5 text-purple-500" />
+                      <div className="flex-shrink-0 w-11 h-11 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center">
+                        <GraduationCap className="w-5 h-5 text-blue-500" />
                       </div>
                       <div className="flex-1 min-w-0">
                         <Typography variant="h4" className="text-lg">
@@ -274,7 +274,7 @@ export function Experience() {
                     </div>
 
                     {/* Institution */}
-                    <Typography variant="subtitle" accent="purple" className="mb-3">
+                    <Typography variant="subtitle" accent="blue" className="mb-3">
                       {item.company}
                     </Typography>
 
@@ -288,7 +288,7 @@ export function Experience() {
                     {item.technologies && item.technologies.length > 0 && (
                       <div className="flex flex-wrap gap-2 pt-5 mt-auto border-t border-gray-100 dark:border-white/[0.06]">
                         {item.technologies
-                          ?.slice(0, 4)
+                          ?.slice(0, 3)
                           ?.map((tech, techIndex) => (
                             <TechBadge key={techIndex}>{tech}</TechBadge>
                           ))}

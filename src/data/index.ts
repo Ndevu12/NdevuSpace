@@ -95,10 +95,9 @@ export const volunteering = experienceJson.volunteering;
 // ============================================
 
 export const statsData = [
-  { label: "Projects Completed", value: "50+" },
-  { label: "Years Experience", value: "4+" },
+  { label: "Years Building", value: "4+" },
+  { label: "Projects Shipped", value: "20+" },
   { label: "Technologies", value: "25+" },
-  { label: "Projects Delivered", value: "30+" },
 ];
 
 // ============================================

@@ -3,7 +3,7 @@
     {
       "id": "backend",
       "title": "Backend Development",
-      "description": "Designing scalable APIs and server-side applications with robust security and optimal performance.",
+      "description": "Scalable APIs and secure, performant server-side systems.",
       "icon": "server",
       "technologies": [
         { "name": "Node.js", "level": "expert", "years": 4 },
@@ -19,7 +19,7 @@
     {
       "id": "frontend",
       "title": "Frontend Development",
-      "description": "Building responsive, performant, and accessible user interfaces with modern frameworks.",
+      "description": "Responsive, accessible interfaces with modern frameworks.",
       "icon": "layout",
       "technologies": [
         { "name": "React", "level": "expert", "years": 4 },
@@ -33,7 +33,7 @@
     {
       "id": "database",
       "title": "Database Management",
-      "description": "Database design, optimization, stored procedures, and ensuring data integrity across systems.",
+      "description": "Schema design, query optimization, and data integrity.",
       "icon": "database",
       "technologies": [
         { "name": "PostgreSQL", "level": "expert", "years": 4 },
@@ -47,7 +47,7 @@
     {
       "id": "cloud",
       "title": "Cloud & DevOps",
-      "description": "Cloud architecture, containerization, CI/CD pipelines, and infrastructure management.",
+      "description": "Cloud architecture, containers, and CI/CD pipelines.",
       "icon": "cloud",
       "technologies": [
         { "name": "Microsoft Azure", "level": "advanced", "years": 2 },
@@ -62,7 +62,7 @@
     {
       "id": "ai-ml",
       "title": "AI & Machine Learning",
-      "description": "Implementing intelligent solutions including NLP, recommender systems, and MLOps.",
+      "description": "Intelligent features: NLP, recommenders, and MLOps.",
       "icon": "cpu",
       "technologies": [
         { "name": "TensorFlow", "level": "intermediate", "years": 2 },
@@ -76,7 +76,7 @@
     {
       "id": "tools",
       "title": "Tools & Practices",
-      "description": "Development tools, testing frameworks, and engineering best practices.",
+      "description": "Testing, tooling, and engineering best practices.",
       "icon": "git-branch",
       "technologies": [
         { "name": "Git/GitHub", "level": "expert", "years": 4 },

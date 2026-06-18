@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import colors from "tailwindcss/colors";
 
 const config: Config = {
   darkMode: 'class',
@@ -13,24 +14,30 @@ const config: Config = {
       'xl': '1280px',
       '2xl': '1536px',
     },
+    // Curated palette — anything not listed here is intentionally unavailable.
+    // This enforces a single-accent design at the token level: blue is the only
+    // brand color, gray is the neutral base, red is reserved for error states.
+    colors: {
+      transparent: "transparent",
+      current: "currentColor",
+      white: colors.white,
+      black: colors.black,
+      // Neutral base — non-distracting surfaces, text, and borders
+      gray: colors.gray,
+      // Single brand accent — important CTAs, links, key highlights
+      blue: colors.blue,
+      accent: colors.blue,
+      // Functional status — destructive/error feedback only
+      red: colors.red,
+      danger: colors.red,
+      // Theme-aware semantic tokens (driven by CSS variables)
+      background: "var(--background)",
+      foreground: "var(--foreground)",
+      primary: "var(--primary)",
+      secondary: "var(--secondary)",
+      border: "var(--border)",
+    },
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        primary: "var(--primary)",
-        secondary: "var(--secondary)",
-        accent: {
-          DEFAULT: '#3b82f6',
-          light: '#60a5fa',
-          dark: '#2563eb',
-        },
-        brand: {
-          DEFAULT: '#3b82f6',
-          light: '#60a5fa',
-          dark: '#2563eb',
-          accent: '#8b5cf6',
-        },
-      },
       fontFamily: {
         sans: ['var(--font-inter)', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
         mono: ['JetBrains Mono', 'Fira Code', 'monospace'],

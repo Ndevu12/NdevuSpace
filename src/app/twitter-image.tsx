@@ -29,7 +29,7 @@ export default async function Image() {
           backgroundSize: "100px 100px",
         }}
       >
-        {/* Gradient overlay */}
+        {/* Accent overlay */}
         <div
           style={{
             position: "absolute",
@@ -37,8 +37,7 @@ export default async function Image() {
             left: 0,
             right: 0,
             bottom: 0,
-            background:
-              "linear-gradient(135deg, rgba(56, 189, 248, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%)",
+            background: "rgba(59, 130, 246, 0.1)",
             display: "flex",
           }}
         />
@@ -60,9 +59,7 @@ export default async function Image() {
             style={{
               fontSize: 72,
               fontWeight: 800,
-              background: "linear-gradient(90deg, #38bdf8, #a855f7, #ec4899)",
-              backgroundClip: "text",
-              color: "transparent",
+              color: "#3b82f6",
               margin: 0,
               marginBottom: 16,
               letterSpacing: "-2px",
@@ -112,10 +109,10 @@ export default async function Image() {
                 key={tech}
                 style={{
                   padding: "8px 20px",
-                  backgroundColor: "rgba(56, 189, 248, 0.15)",
-                  border: "1px solid rgba(56, 189, 248, 0.3)",
+                  backgroundColor: "rgba(59, 130, 246, 0.15)",
+                  border: "1px solid rgba(59, 130, 246, 0.3)",
                   borderRadius: 20,
-                  color: "#38bdf8",
+                  color: "#3b82f6",
                   fontSize: 18,
                   fontWeight: 500,
                 }}

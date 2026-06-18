@@ -3,13 +3,13 @@
     {
       "id": "the_inventory",
       "title": "The Inventory",
-      "description": "Inventory management system for businesses.",
+      "description": "Open Source Inventory management system for businesses.",
       "image": "/images/projects/theinventory.png",
       "technologies": ["Python", "Django", "SQL", "Wagtail", "DevOps"],
       "category": "fullstack",
       "status": "completed",
       "highlights": [
-        "Inventory management system for businesses",
+        "Open Source Inventory management system for businesses",
         "Role-based access control",
         "Secure payment integration",
         "Real-time inventory tracking"
@@ -44,18 +44,17 @@
     },
     {
       "id": "portfolio",
-      "title": "Personal Portfolio & Blog",
-      "description": "A modern, high-performance portfolio showcasing my work with dark/light themes, smooth animations, and dynamic content management.",
-      "longDescription": "This portfolio website featuring a blog system, theme switching, contact form integration, and optimized performance. Built with Next.js 15, TypeScript, Tailwind CSS, and Framer Motion for smooth animations.",
+      "title": "Blog Website",
+      "description": "A modern, high-performance blog website.",
       "image": "/images/projects/blog.png",
       "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      "category": "frontend",
-      "status": "live",
+      "category": "fullstack",
+      "status": "completed",
       "highlights": [
+        "Blog website showcasing my work",
         "Dark/Light theme with system preference",
         "Smooth scroll animations",
-        "Dynamic JSON-based content",
-        "SEO optimized"
+        "Dynamic JSON-based content"
       ],
       "links": {
         "demo": "https://www.ndevuspace.com",
