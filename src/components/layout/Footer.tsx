@@ -16,6 +16,7 @@ import {
   ArrowUp,
   ExternalLink,
 } from "lucide-react";
+import { Logo } from "../ui/logo";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -38,22 +39,7 @@ export function Footer() {
             {/* Brand Column */}
             <div className="lg:col-span-2 space-y-6">
               {/* Logo */}
-              <Link href="/" className="inline-flex items-center gap-2 group">
-                <div
-                  className={cn(
-                    "w-10 h-10 rounded-xl flex items-center justify-center",
-                    "bg-gradient-to-br from-blue-500 to-purple-500",
-                    "text-white font-bold text-lg",
-                    "group-hover:shadow-lg group-hover:shadow-blue-500/25",
-                    "transition-all duration-300"
-                  )}
-                >
-                  N
-                </div>
-                <span className="text-gray-900 dark:text-white font-semibold text-lg">
-                  {PERSONAL_INFO.shortName}
-                </span>
-              </Link>
+              <Logo shortName={"Jean Paul Elisa NIYOKWIZERWA"} />
 
               <p className="text-gray-500 dark:text-gray-400 max-w-md leading-relaxed">
                 {PERSONAL_INFO.title} based in {PERSONAL_INFO.location}.
@@ -82,7 +68,7 @@ export function Footer() {
                 </a>
                 <a
                   href={SOCIAL_LINKS.email}
-                  className="p-2.5 rounded-xl bg-gray-100 dark:bg-white/[0.03] border border-gray-200 dark:border-white/[0.08] text-gray-500 dark:text-gray-400 hover:text-green-500 dark:hover:text-green-400 hover:bg-green-50 dark:hover:bg-green-500/10 hover:border-green-200 dark:hover:border-green-500/20 transition-all duration-300"
+                  className="p-2.5 rounded-xl bg-gray-100 dark:bg-white/[0.03] border border-gray-200 dark:border-white/[0.08] text-gray-500 dark:text-gray-400 hover:text-blue-500 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-500/10 hover:border-blue-200 dark:hover:border-blue-500/20 transition-all duration-300"
                   aria-label="Email"
                 >
                   <Mail className="w-5 h-5" />

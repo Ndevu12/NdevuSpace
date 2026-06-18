@@ -71,7 +71,6 @@ export function Skills() {
       {/* Background decoration */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/4 left-0 w-[400px] h-[400px] bg-blue-500/5 dark:bg-blue-500/10 rounded-full blur-[100px]" />
-        <div className="absolute bottom-1/4 right-0 w-[300px] h-[300px] bg-purple-500/5 dark:bg-purple-500/10 rounded-full blur-[80px]" />
       </div>
 
       <motion.div
@@ -83,7 +82,7 @@ export function Skills() {
         <SectionHeader
           badge="Skills & Expertise"
           title="Technical Proficiency"
-          subtitle="Technologies and tools I use to bring ideas to life"
+          subtitle="The tools I build with."
         />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
@@ -99,9 +98,9 @@ export function Skills() {
                       <div
                         className={cn(
                           "w-14 h-14 rounded-2xl flex items-center justify-center",
-                          "bg-gradient-to-br from-blue-500/15 to-purple-500/15",
+                          "bg-blue-500/10",
                           "border border-blue-500/20",
-                          "group-hover:from-blue-500/25 group-hover:to-purple-500/25",
+                          "group-hover:bg-blue-500/20",
                           "transition-all duration-300",
                         )}
                       >
@@ -119,14 +118,14 @@ export function Skills() {
 
                     {/* Technologies */}
                     <div className="flex flex-wrap gap-2 pt-4 border-t border-gray-100 dark:border-white/[0.06]">
-                      {skill.technologies.map((tech, techIndex) => (
+                      {skill.technologies.slice(0, 5).map((tech, techIndex) => (
                         <TechBadge key={techIndex}>{tech}</TechBadge>
                       ))}
                     </div>
                   </CardContent>
 
                   {/* Bottom accent line */}
-                  <div className="h-1 bg-gradient-to-r from-blue-500 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                  <div className="h-1 bg-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
                 </Card>
               </motion.div>
             );

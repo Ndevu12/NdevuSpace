@@ -2,13 +2,15 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { PERSONAL_INFO } from "@/lib/constants";
 
 interface LogoProps {
-  shortName: string;
+  shortName?: string;
 }
 
-export const Logo = (props: LogoProps = { shortName: "N" }) => {
+export const Logo = (props: LogoProps = { shortName: "" }) => {
     return (
             <Link
               href="/"
@@ -17,14 +19,20 @@ export const Logo = (props: LogoProps = { shortName: "N" }) => {
             >
               <div
                 className={cn(
-                  "w-10 h-10 rounded-xl flex items-center justify-center",
-                  "bg-gradient-to-br from-blue-500 to-purple-500",
-                  "text-white font-bold text-lg",
+                  "relative w-9 h-9 rounded-xl overflow-hidden",
+                  "ring-1 ring-gray-200 dark:ring-white/10",
                   "group-hover:shadow-lg group-hover:shadow-blue-500/25",
                   "transition-all duration-300"
                 )}
               >
-                N
+                <Image
+                  src={PERSONAL_INFO.profileImage}
+                  alt={PERSONAL_INFO.fullName}
+                  fill
+                  sizes="36px"
+                  className="object-cover"
+                  priority
+                />
               </div>
               <span className="text-gray-900 dark:text-white font-semibold text-lg hidden sm:block">
                 {props?.shortName}

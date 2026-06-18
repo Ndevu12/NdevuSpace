@@ -1,30 +1,11 @@
 {
   "work": [
-        {
-      "id": "geofinda",
-      "title": "Tech Lead",
-      "company": "GEOFINDA Ltd",
-      "location": "Norrsken House Kigali",
-      "period": "Jan 2026 - Present",
-      "type": "work",
-      "description": [
-        "Lead development of, and architected a web-based accommodation and property discovery platform focusing on Africa's rental and listing market",
-        "Designed the technical architecture built on Supabase and GraphQL for rapid development and scalability",
-        "Engineered payment integration systems and subscription models supporting local hosts and agents",
-        "Defined the product roadmap and technical direction, aligning platform architecture with market requirements"
-      ],
-      "technologies": ["Supabase", "RESTFul API", "React", "Node.js", "PostgreSQL", "Payment Integration"],
-      "achievements": [
-        "Successfully launched platform in Rwanda market",
-        "Built sustainable revenue model for local agents"
-      ]
-    },
     {
       "id": "gre-engineer",
       "title": "Software Engineer",
-      "company": "Global Real Estate Ltd",
-      "location": "Kigali, Rwanda",
-      "period": "Jan 2024 - Feb 2026",
+      "company": "Pryro Ltd",
+      "location": "",
+      "period": "Jun 2025 – Feb 2026",
       "type": "work",
       "description": [
         "Designed and developed core backend services and APIs using Node.js, PostgreSQL, RESTful, and GraphQL, enabling efficient property search and secure transactions",
@@ -42,7 +23,7 @@
     },
     {
       "id": "andela",
-      "title": "Web Developer Apprenticeship",
+      "title": "Web Developer",
       "company": "Andela Rwanda",
       "location": "Hybrid",
       "period": "Feb 2024 - Nov 2024",
@@ -60,21 +41,20 @@
       ]
     },
     {
-      "id": "mobylife",
+      "id": "backed-by-nda",
       "title": "Software Engineer",
-      "company": "MobyLife Ltd",
-      "location": "Kigali, Rwanda",
-      "period": "2023",
+      "company": "Anonymized by NDA",
+      "location": "Various Locations",
+      "period": "Various Periods",
       "type": "work",
       "description": [
-        "Architected an AI and IoT-powered mobility platform designed to address Rwanda's public transport challenges with real-time tracking and smart routing",
-        "Led system architecture and technical direction during incubation at the AI & IoT Innovation Program, making core technology stack decisions",
-        "Integrated third-party APIs and transport operator systems to enable pilot implementation and real-time data exchange"
+        "Developed and maintained software solutions for various clients",
+        "Worked on various projects and technologies",
+        "Worked on various projects and technologies"
       ],
-      "technologies": ["AI/ML", "IoT", "Node.js", "React Native"],
+      "technologies": ["Various Technologies"],
       "achievements": [
-        "Selected for AI & IoT Innovation Program incubation",
-        "Built real-time tracking and smart routing architecture"
+        "Various Achievements"
       ]
     }
   ],
