@@ -1,168 +1,104 @@
 "use client";
 
 import React, { useRef } from "react";
-import Image from "next/image";
 import { motion, useInView } from "framer-motion";
-import { cn } from "@/lib/utils";
-import {
-  Section,
-  SectionHeader,
-  Card,
-  Button,
-  TechBadge,
-} from "@/components/ui";
-import { projectsData } from "@/data";
-import { ExternalLink, Github, ArrowRight } from "lucide-react";
+import { Section, SectionHeader } from "@/components/ui";
+import { projects } from "@/data";
+import { ArrowUpRight, Github } from "lucide-react";
+
+const container = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.15 },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 12 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] as const },
+  },
+};
 
 export function Projects() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.1 },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6, ease: "easeOut" as const },
-    },
-  };
-
   return (
-    <Section
-      id="projects"
-      className="transition-colors duration-300"
-    >
+    <Section id="projects">
       <motion.div
         ref={ref}
-        variants={containerVariants}
+        variants={container}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
-        <SectionHeader
-          badge="My Work"
-          title="Engineering Projects"
-          subtitle="Selected work, shipped to production."
-        />
+        <SectionHeader index="01" label="Selected Work" title="Things I've built" />
 
-        {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {projectsData.slice(0, 3).map((project) => (
-            <motion.div key={project.id} variants={itemVariants}>
-              <Card className="h-full group overflow-hidden" hover>
-                {/* Project Image */}
-                <div className="relative h-48 overflow-hidden">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  {/* Overlay */}
-                  <div
-                    className={cn(
-                      "absolute inset-0 bg-gradient-to-t from-white dark:from-primary via-white/50 dark:via-primary/50 to-transparent",
-                      "opacity-60 group-hover:opacity-80 transition-opacity duration-300",
-                    )}
-                  />
+        <div className="space-y-6">
+          {projects.map((project, index) => (
+            <motion.article
+              key={project.id}
+              variants={item}
+              className="glass-panel glass-sheen p-8 md:p-10 transition-transform duration-500 hover:-translate-y-1"
+            >
+              <div className="flex flex-col md:flex-row md:items-start gap-6">
+                {/* Index */}
+                <span className="font-mono text-sm text-gray-400 dark:text-gray-500 pt-1.5">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
 
-                  {/* Category Badge */}
-                  <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 rounded-full bg-blue-500/90 text-white text-xs font-medium">
-                      {project.category}
+                <div className="flex-1">
+                  <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+                    <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white">
+                      {project.title}
+                    </h3>
+                    <span className="font-mono text-sm text-gray-400 dark:text-gray-500">
+                      {project.year}
                     </span>
                   </div>
 
-                  {/* Action Buttons */}
-                  <div
-                    className={cn(
-                      "absolute inset-0 flex items-center justify-center gap-4",
-                      "opacity-0 group-hover:opacity-100 transition-all duration-300",
-                    )}
-                  >
-                    {project.githubLink && (
-                      <a
-                        href={project.githubLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={cn(
-                          "p-3 rounded-full bg-white/10 backdrop-blur-sm",
-                          "border border-white/20 text-white",
-                          "hover:bg-white hover:text-primary",
-                          "transition-all duration-300 transform hover:scale-110",
-                        )}
-                        aria-label="View source code"
-                      >
-                        <Github className="w-5 h-5" />
-                      </a>
-                    )}
-                    {project.liveLink && (
-                      <a
-                        href={project.liveLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={cn(
-                          "p-3 rounded-full bg-blue-500 backdrop-blur-sm",
-                          "border border-blue-400 text-white",
-                          "hover:bg-blue-400",
-                          "transition-all duration-300 transform hover:scale-110",
-                        )}
-                        aria-label="View live demo"
-                      >
-                        <ExternalLink className="w-5 h-5" />
-                      </a>
-                    )}
-                  </div>
-                </div>
-
-                {/* Project Info */}
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors duration-300">
-                    {project.title}
-                  </h3>
-                  <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-4 line-clamp-3">
+                  <p className="mt-3 text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl">
                     {project.description}
                   </p>
 
-                  {/* Tech Stack */}
-                  <div className="flex flex-wrap gap-2">
-                    {project.techStack.slice(0, 4).map((tech, techIndex) => (
-                      <TechBadge key={techIndex}>{tech}</TechBadge>
-                    ))}
-                    {project.techStack.length > 4 && (
-                      <span className="text-xs text-gray-500 self-center">
-                        +{project.techStack.length - 4} more
-                      </span>
-                    )}
-                  </div>
+                  <p className="mt-4 font-mono text-xs tracking-wide text-gray-500 dark:text-gray-400">
+                    {project.technologies.join(" · ")}
+                  </p>
                 </div>
-              </Card>
-            </motion.div>
+
+                {/* Links */}
+                <div className="flex items-center gap-3 md:pt-1.5">
+                  {project.links.demo && (
+                    <a
+                      href={project.links.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${project.title} live demo`}
+                      className="inline-flex items-center gap-1.5 text-sm font-medium text-gray-900 dark:text-white border-b border-transparent hover:border-current transition-colors duration-300"
+                    >
+                      Visit
+                      <ArrowUpRight className="w-4 h-4" />
+                    </a>
+                  )}
+                  {project.links.github && (
+                    <a
+                      href={project.links.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${project.title} source code`}
+                      className="p-2 rounded-full text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-900/5 dark:hover:bg-white/10 transition-colors duration-300"
+                    >
+                      <Github className="w-5 h-5" />
+                    </a>
+                  )}
+                </div>
+              </div>
+            </motion.article>
           ))}
         </div>
-
-        {/* View All Projects - External Link to GitHub */}
-        <motion.div variants={itemVariants} className="text-center mt-12">
-          <a
-            href="https://github.com/Ndevu12?tab=repositories"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button
-              variant="secondary"
-              rightIcon={<ArrowRight className="w-5 h-5" />}
-            >
-              View All Projects
-            </Button>
-          </a>
-        </motion.div>
       </motion.div>
     </Section>
   );

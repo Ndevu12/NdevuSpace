@@ -28,20 +28,31 @@ const nextConfig = {
         destination: '/?section=about',
       },
       {
-        source: '/skills',
-        destination: '/?section=skills',
-      },
-      {
         source: '/projects',
         destination: '/?section=projects',
       },
       {
-        source: '/experience',
-        destination: '/?section=experience',
-      },
-      {
         source: '/contact',
         destination: '/?section=contact',
+      },
+    ];
+  },
+
+  /**
+   * Redirects for retired section pages
+   * /skills and /experience no longer exist on the redesigned site
+   */
+  async redirects() {
+    return [
+      {
+        source: '/skills',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/experience',
+        destination: '/',
+        permanent: true,
       },
     ];
   },
