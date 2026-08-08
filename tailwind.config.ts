@@ -14,22 +14,15 @@ const config: Config = {
       'xl': '1280px',
       '2xl': '1536px',
     },
-    // Curated palette — anything not listed here is intentionally unavailable.
-    // This enforces a single-accent design at the token level: blue is the only
-    // brand color, gray is the neutral base, red is reserved for error states.
+    // Strict monochrome palette — black, white, and gray only.
+    // Anything not listed here is intentionally unavailable so color
+    // can never leak back into the design.
     colors: {
       transparent: "transparent",
       current: "currentColor",
       white: colors.white,
       black: colors.black,
-      // Neutral base — non-distracting surfaces, text, and borders
-      gray: colors.gray,
-      // Single brand accent — important CTAs, links, key highlights
-      blue: colors.blue,
-      accent: colors.blue,
-      // Functional status — destructive/error feedback only
-      red: colors.red,
-      danger: colors.red,
+      gray: colors.neutral,
       // Theme-aware semantic tokens (driven by CSS variables)
       background: "var(--background)",
       foreground: "var(--foreground)",
@@ -44,63 +37,23 @@ const config: Config = {
       },
       animation: {
         'fade-in': 'fadeIn 0.8s ease-out forwards',
-        'slide-up': 'slideUp 0.8s ease-out forwards',
-        'slide-in-left': 'slideInLeft 0.8s ease-out forwards',
-        'slide-in-right': 'slideInRight 0.8s ease-out forwards',
-        'scale-in': 'scaleIn 0.6s ease-out forwards',
-        'float': 'float 6s ease-in-out infinite',
-        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'gradient': 'gradient 8s linear infinite',
-        'shimmer': 'shimmer 2s linear infinite',
+        'rise-in': 'riseIn 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards',
       },
       keyframes: {
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         },
-        slideUp: {
-          '0%': { opacity: '0', transform: 'translateY(30px)' },
+        riseIn: {
+          '0%': { opacity: '0', transform: 'translateY(12px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
-        slideInLeft: {
-          '0%': { opacity: '0', transform: 'translateX(-30px)' },
-          '100%': { opacity: '1', transform: 'translateX(0)' },
-        },
-        slideInRight: {
-          '0%': { opacity: '0', transform: 'translateX(30px)' },
-          '100%': { opacity: '1', transform: 'translateX(0)' },
-        },
-        scaleIn: {
-          '0%': { opacity: '0', transform: 'scale(0.9)' },
-          '100%': { opacity: '1', transform: 'scale(1)' },
-        },
-        float: {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-20px)' },
-        },
-        gradient: {
-          '0%, 100%': { backgroundPosition: '0% 50%' },
-          '50%': { backgroundPosition: '100% 50%' },
-        },
-        shimmer: {
-          '0%': { backgroundPosition: '-200% 0' },
-          '100%': { backgroundPosition: '200% 0' },
-        },
-      },
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'grid-pattern': 'linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px)',
-        'dot-pattern': 'radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px)',
-      },
-      backgroundSize: {
-        'grid': '60px 60px',
-        'dot': '30px 30px',
       },
       boxShadow: {
-        'glow': '0 0 40px rgba(59, 130, 246, 0.3)',
-        'glow-lg': '0 0 60px rgba(59, 130, 246, 0.4)',
-        'inner-glow': 'inset 0 0 30px rgba(59, 130, 246, 0.1)',
+        'glass': 'inset 0 1px 0 var(--glass-highlight), var(--glass-shadow)',
+      },
+      borderRadius: {
+        'glass': '1.5rem',
       },
     },
   },

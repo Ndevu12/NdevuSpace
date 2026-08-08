@@ -92,8 +92,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         className="min-h-screen w-full font-sans bg-primary overflow-x-hidden text-foreground antialiased"
         suppressHydrationWarning
       >
-        {/* Global grid pattern - increased visibility with proper color contrast */}
-        <div className="pointer-events-none fixed inset-0 z-0 bg-[linear-gradient(to_right,var(--grid)_1px,transparent_1px),linear-gradient(to_bottom,var(--grid)_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-[0.25]" />
+        {/* Ambient monochrome shapes the glass surfaces refract */}
+        <div className="ambient-bg" aria-hidden="true" />
 
         <ThemeProvider>
           <Header />

@@ -33,7 +33,7 @@ export interface SectionSEO {
   ogDescription?: string;
 }
 
-export type SectionId = "about" | "skills" | "projects" | "experience" | "contact";
+export type SectionId = "about" | "projects" | "contact";
 
 // =============================================================================
 // SECTION-SPECIFIC KEYWORDS
@@ -66,41 +66,6 @@ const ABOUT_KEYWORDS = [
   "Backend Engineer Rwanda",
 ];
 
-const SKILLS_KEYWORDS = [
-  // Frontend
-  "React Developer",
-  "Next.js Developer",
-  "TypeScript Developer",
-  "Frontend Developer Rwanda",
-  "JavaScript Expert",
-  // Backend
-  "Node.js Developer",
-  "Python Developer",
-  "Django Developer",
-  "FastAPI Developer",
-  "Backend Developer Rwanda",
-  // Full Stack
-  "Full Stack Developer Rwanda",
-  "Full Stack Engineer Africa",
-  "MERN Stack Developer",
-  "PERN Stack Developer",
-  // AI/ML
-  "AI Engineer Rwanda",
-  "ML Engineer Africa",
-  "Machine Learning Developer",
-  "TensorFlow Developer",
-  "Python AI Developer",
-  // DevOps & Cloud
-  "Docker Developer",
-  "AWS Developer",
-  "Cloud Engineer Rwanda",
-  "DevOps Engineer Africa",
-  // Database
-  "PostgreSQL Developer",
-  "MongoDB Developer",
-  "GraphQL Developer",
-];
-
 const PROJECTS_KEYWORDS = [
   // Portfolio terms
   "Jean Paul Elisa Portfolio",
@@ -122,34 +87,6 @@ const PROJECTS_KEYWORDS = [
   "Open Source Contributor",
   "GitHub Developer Rwanda",
   "Open Source Projects Africa",
-];
-
-const EXPERIENCE_KEYWORDS = [
-  // Career terms
-  "Jean Paul Elisa Experience",
-  "Jean Paul Elisa Work History",
-  "Jean Paul Elisa Resume",
-  "Jean Paul Elisa CV",
-  // Engineering leadership
-  "Tech Lead Experience",
-  "Engineering Lead Africa",
-  "Technical Leadership Rwanda",
-  "CTO Experience",
-  // Industry experience
-  "Software Engineer Experience",
-  "Full Stack Developer Experience",
-  "System Design Experience",
-  "Freelance Developer Experience",
-  // Companies & roles
-  "Andela Developer",
-  "Rwanda Tech Companies",
-  "East Africa Tech Experience",
-  // Technical community
-  "DSA Coach",
-  "DSA Coach Rwanda",
-  "Algorithms Expert Rwanda",
-  "Competitive Programming Rwanda",
-  "Data Structures Expert Africa",
 ];
 
 const CONTACT_KEYWORDS = [
@@ -192,20 +129,6 @@ export const INDEXABLE_SECTIONS: Record<SectionId, SectionSEO> = {
     ogDescription:
       "Discover the story of Jean Paul Elisa - from Rwanda to architecting production-grade systems and contributing to the technical community across Africa.",
   },
-  skills: {
-    id: "skills",
-    path: "/skills",
-    name: "Skills",
-    title: "Technical Skills | Jean Paul Elisa - Full Stack & AI/ML Developer",
-    description:
-      "Explore Jean Paul Elisa's technical skills: React, Node.js, TypeScript, Python, Django, Next.js, PostgreSQL, Docker, AWS, and AI/ML. Full Stack expertise with focus on scalable web applications and machine learning solutions.",
-    keywords: SKILLS_KEYWORDS,
-    priority: 0.8,
-    changeFreq: "monthly",
-    ogTitle: "Technical Skills | Jean Paul Elisa",
-    ogDescription:
-      "Full Stack development expertise: React, Node.js, TypeScript, Python, AI/ML, and cloud technologies.",
-  },
   projects: {
     id: "projects",
     path: "/projects",
@@ -219,20 +142,6 @@ export const INDEXABLE_SECTIONS: Record<SectionId, SectionSEO> = {
     ogTitle: "Project Portfolio | Jean Paul Elisa",
     ogDescription:
       "Featured projects: Full-stack applications, AI platforms, and innovative tech solutions from Rwanda.",
-  },
-  experience: {
-    id: "experience",
-    path: "/experience",
-    name: "Experience",
-    title: "Work Experience | Jean Paul Elisa - Full Stack Software Engineer",
-    description:
-      "Jean Paul Elisa's professional experience as a Full Stack Software Engineer. Engineering roles at GEOFINDA, Global Real Estate Ltd, Andela, and algorithms coaching for the Pan-African Informatics Olympiad. 4+ years building scalable systems.",
-    keywords: EXPERIENCE_KEYWORDS,
-    priority: 0.85,
-    changeFreq: "monthly",
-    ogTitle: "Professional Experience | Jean Paul Elisa",
-    ogDescription:
-      "Full Stack Software Engineer experience across startups, enterprise, and technical community contributions in East Africa.",
   },
   contact: {
     id: "contact",
