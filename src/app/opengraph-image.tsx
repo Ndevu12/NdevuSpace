@@ -24,20 +24,19 @@ export default async function Image() {
           alignItems: "center",
           justifyContent: "center",
           backgroundColor: "#0a0a0a",
-          backgroundImage:
-            "radial-gradient(circle at 25px 25px, #1a1a2e 2%, transparent 0%), radial-gradient(circle at 75px 75px, #1a1a2e 2%, transparent 0%)",
-          backgroundSize: "100px 100px",
         }}
       >
-        {/* Accent overlay */}
+        {/* Ambient monochrome glow */}
         <div
           style={{
             position: "absolute",
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            background: "rgba(59, 130, 246, 0.1)",
+            top: -200,
+            right: -150,
+            width: 600,
+            height: 600,
+            borderRadius: 9999,
+            background: "rgba(255, 255, 255, 0.06)",
+            filter: "blur(120px)",
             display: "flex",
           }}
         />
@@ -59,7 +58,7 @@ export default async function Image() {
             style={{
               fontSize: 72,
               fontWeight: 800,
-              color: "#3b82f6",
+              color: "#f2f2f2",
               margin: 0,
               marginBottom: 16,
               letterSpacing: "-2px",
@@ -72,7 +71,7 @@ export default async function Image() {
           <p
             style={{
               fontSize: 36,
-              color: "#94a3b8",
+              color: "#9a9a9a",
               margin: 0,
               marginBottom: 32,
               fontWeight: 500,
@@ -85,7 +84,7 @@ export default async function Image() {
           <p
             style={{
               fontSize: 24,
-              color: "#64748b",
+              color: "#6b6b6b",
               margin: 0,
               maxWidth: 800,
               lineHeight: 1.4,
@@ -94,7 +93,7 @@ export default async function Image() {
             {SITE_CONFIG.description.tagline}
           </p>
 
-          {/* Tech stack badges */}
+          {/* Tech stack tags - glass look */}
           <div
             style={{
               display: "flex",
@@ -109,10 +108,10 @@ export default async function Image() {
                 key={tech}
                 style={{
                   padding: "8px 20px",
-                  backgroundColor: "rgba(59, 130, 246, 0.15)",
-                  border: "1px solid rgba(59, 130, 246, 0.3)",
+                  backgroundColor: "rgba(255, 255, 255, 0.08)",
+                  border: "1px solid rgba(255, 255, 255, 0.15)",
                   borderRadius: 20,
-                  color: "#3b82f6",
+                  color: "#d4d4d4",
                   fontSize: 18,
                   fontWeight: 500,
                 }}
@@ -126,7 +125,7 @@ export default async function Image() {
           <p
             style={{
               fontSize: 20,
-              color: "#475569",
+              color: "#6b6b6b",
               margin: 0,
               marginTop: 48,
               fontWeight: 500,
