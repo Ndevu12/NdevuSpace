@@ -5,9 +5,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/License-Custom-orange?style=for-the-badge)](#-license)
 
-A modern, professional portfolio website for **Jean Paul Elisa NIYOKWIZERWA** - Tech Lead, Full Stack Software Engineer & Entrepreneur based in Kigali, Rwanda.
-
-Built with Next.js 15, TypeScript, and Tailwind CSS.
+A modern, professional portfolio website Built with Next.js 15, TypeScript, and Tailwind CSS.
 
 ## Features
 
