@@ -21,10 +21,7 @@ export const SOCIAL_LINKS = {
 
 // Navigation Items
 export const NAV_ITEMS = [
-  { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-  { name: "Experience", href: "#experience" },
+  { name: "Work", href: "#projects" },
   { name: "Contact", href: "#contact" },
 ];
 

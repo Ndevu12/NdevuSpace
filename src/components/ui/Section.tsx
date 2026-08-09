@@ -19,14 +19,11 @@ export function Section({
   return (
     <section
       id={id}
-      className={cn(
-        "relative py-20 md:py-28 lg:py-32 overflow-hidden",
-        className
-      )}
+      className={cn("relative py-24 md:py-32 lg:py-40", className)}
     >
       <div
         className={cn(
-          "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+          "max-w-5xl mx-auto px-6 sm:px-8 lg:px-10",
           containerClassName
         )}
       >
@@ -37,60 +34,35 @@ export function Section({
 }
 
 interface SectionHeaderProps {
-  badge?: string;
+  /** Index label, e.g. "01" — rendered in mono before the label */
+  index?: string;
+  /** Small-caps mono label, e.g. "Selected Work" */
+  label?: string;
   title: string;
   subtitle?: string;
-  align?: "left" | "center";
   className?: string;
 }
 
 export function SectionHeader({
-  badge,
+  index,
+  label,
   title,
   subtitle,
-  align = "center",
   className,
 }: SectionHeaderProps) {
   return (
-    <div
-      className={cn(
-        "mb-12 md:mb-16",
-        align === "center" ? "text-center" : "text-left",
-        className
-      )}
-    >
-      {badge && (
-        <div
-          className={cn(
-            "inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6",
-            "bg-blue-500/10 border border-blue-500/20",
-            "text-blue-500 dark:text-blue-400 text-sm font-medium"
-          )}
-        >
-          <span className="w-2 h-2 bg-blue-500 dark:bg-blue-400 rounded-full animate-pulse" />
-          {badge}
-        </div>
+    <div className={cn("mb-14 md:mb-20 text-left", className)}>
+      {label && (
+        <p className="font-mono text-xs uppercase tracking-[0.25em] text-gray-500 dark:text-gray-400 mb-5">
+          {index && <span className="mr-3">{index}</span>}
+          {label}
+        </p>
       )}
 
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-5 leading-tight">
-        {title.split(" ").map((word, index, arr) => (
-          <span key={index}>
-            {index === arr.length - 1 ? (
-              <span className="text-gradient">{word}</span>
-            ) : (
-              <span>{word} </span>
-            )}
-          </span>
-        ))}
-      </h2>
+      <h2 className="text-gray-900 dark:text-white">{title}</h2>
 
       {subtitle && (
-        <p
-          className={cn(
-            "text-gray-600 dark:text-gray-400 text-lg md:text-xl leading-relaxed",
-            align === "center" ? "max-w-3xl mx-auto" : "max-w-2xl"
-          )}
-        >
+        <p className="mt-4 text-gray-600 dark:text-gray-400 text-lg leading-relaxed max-w-2xl">
           {subtitle}
         </p>
       )}
