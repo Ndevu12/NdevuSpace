@@ -1,6 +1,6 @@
 "use client";
 
-import { Hero, Projects, Contact } from "@/components/sections";
+import { Hero, Projects, Quote, Contact } from "@/components/sections";
 import { useSectionScroll } from "@/hooks";
 import { isValidSectionId } from "@/lib/seo";
 
@@ -22,6 +22,7 @@ export default function HomeClient({ section }: HomeClientProps) {
     <>
       <Hero />
       <Projects />
+      <Quote />
       <Contact />
     </>
   );
