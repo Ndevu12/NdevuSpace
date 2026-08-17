@@ -1,6 +1,48 @@
 {
   "featured": [
     {
+      "id": "stayawakebot",
+      "title": "stayAwakeBot",
+      "description": "Supply-chain security scanner (saw) that hunts self-propagating packages in repos, lockfiles, and dependency trees — then remediates by PR and gates CI.",
+      "image": "/images/projects/theinventory.png",
+      "technologies": ["Python", "CLI", "GitHub Actions", "Docker", "PyPI"],
+      "category": "backend",
+      "status": "active",
+      "highlights": [
+        "Detects worm-infected packages across repos, lockfiles, and installed dependency trees",
+        "Auto-remediation through pull requests, never rewriting history",
+        "One-command CI gate (saw guard) with SHA-pinned GitHub Actions workflow",
+        "Published on PyPI and GHCR with SLSA provenance and SBOM attestations"
+      ],
+      "links": {
+        "demo": "https://pypi.org/project/stayawakebot/",
+        "github": "https://github.com/Ndevu12/stayAwakeBot"
+      },
+      "featured": true,
+      "year": 2026
+    },
+    {
+      "id": "research-assistant",
+      "title": "Research Assistant Model",
+      "description": "Local-first AI research pipeline: retrieves papers from four scholarly APIs, ranks and clusters them with embeddings, and synthesizes insights into cited reports.",
+      "image": "/images/projects/blog.png",
+      "technologies": ["Python", "pydantic-ai", "Ollama", "sentence-transformers", "aiohttp"],
+      "category": "backend",
+      "status": "active",
+      "highlights": [
+        "Multi-source retrieval from OpenAlex, Semantic Scholar, arXiv, and CrossRef",
+        "Embedding-backed deduplication, ranking, and HDBSCAN clustering",
+        "Fully local LLM inference via Ollama, with OpenAI and Anthropic providers",
+        "Markdown/HTML/PDF reports with BibTeX, APA, MLA, and Chicago citation export"
+      ],
+      "links": {
+        "demo": "https://ndevu12.github.io/Research_Assistant_Model/",
+        "github": "https://github.com/Ndevu12/Research_Assistant_Model"
+      },
+      "featured": true,
+      "year": 2026
+    },
+    {
       "id": "the_inventory",
       "title": "The Inventory",
       "description": "Open Source Inventory management system for businesses.",
@@ -21,7 +63,7 @@
       "featured": true,
       "year": 2024
     },
-        {
+    {
       "id": "ndevu-store",
       "title": "Ndevu Store",
       "description": "E-commerce platform with role-based access, and secure payments.",
@@ -38,27 +80,6 @@
       "links": {
         "demo": "https://ndevu-store-fe.vercel.app",
         "github": null
-      },
-      "featured": true,
-      "year": 2024
-    },
-    {
-      "id": "portfolio",
-      "title": "Blog Website",
-      "description": "A modern, high-performance blog website.",
-      "image": "/images/projects/blog.png",
-      "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      "category": "fullstack",
-      "status": "completed",
-      "highlights": [
-        "Blog website showcasing my work",
-        "Dark/Light theme with system preference",
-        "Smooth scroll animations",
-        "Dynamic JSON-based content"
-      ],
-      "links": {
-        "demo": "https://www.ndevuspace.com",
-        "github": "https://github.com/Ndevu12/NdevuSpace-blog"
       },
       "featured": true,
       "year": 2024
