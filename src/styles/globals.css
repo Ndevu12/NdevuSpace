@@ -182,6 +182,19 @@ body {
   background: var(--ambient-2);
 }
 
+/* Quote carousel progress line - restarted per quote via React key */
+@keyframes quote-progress-fill {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.quote-progress {
+  width: 0;
+  animation-name: quote-progress-fill;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
 /* Selection styling - monochrome invert */
 ::selection {
   background: #111111;
